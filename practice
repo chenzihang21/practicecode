@@ -1,0 +1,60 @@
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+struct Book
+{
+	char name[20];
+	short price;
+};
+int main()
+{
+	struct Book b1 = { "c语言程序设计", 55 };
+	printf("书名：%s\n", b1.name);
+	printf("价格：%d元\n", b1.price);
+	b1.price = 15;
+	printf("修改后的价格:%d\n", b1.price);
+	return 0;
+}
+
+
+#include <stdio.h>
+int main()
+{
+	int i = 1;
+	while (i <= 100)
+	{
+		if (i % 2 == 1)
+			printf("%d\n", i);
+		i++;
+	}
+	return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+	int day = 0;
+	scanf("%d\n",&day);
+	switch (day)
+	{
+		case 1:
+			printf("星期一\n");
+			break;
+		case 2:
+			printf("星期二\n");
+		case 3:
+			printf("星期三\n");
+		case 4:
+			printf("星期四\n");
+		case 5:
+			printf("星期五\n");
+		case 6:
+			printf("星期六\n");
+		case 7:
+			printf("星期天\n");
+			break;
+		default:
+			printf("输入错误\n");
+			break;
+	}
+	return 0;
+}
